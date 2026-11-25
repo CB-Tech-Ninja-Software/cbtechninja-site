@@ -76,7 +76,7 @@ section{padding:56px 0}
 .card .top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
 .card .top img{width:52px;height:52px;border-radius:12px}
 .card .top h3{margin:0}
-.badge{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--ink-soft);white-space:nowrap}
+.badge{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--ink-soft);white-space:normal;max-width:100%;overflow-wrap:anywhere;line-height:1.35}
 .badge.live{color:var(--accent-ink);border-color:var(--accent);background:var(--accent-soft)}
 .card p{color:var(--ink-soft);flex:1}
 .links{display:flex;gap:16px;flex-wrap:wrap;font-weight:600;font-size:.95rem}
