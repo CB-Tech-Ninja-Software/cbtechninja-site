@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How zero-knowledge budget sync works | CB Tech Ninja Software</title>
+<meta name="description" content="How jBudget Online&#x27;s zero-knowledge sync works: local encryption, pairing-phrase keys, AES-256-GCM ciphertext and relay or Google Drive transport.">
+<meta property="og:title" content="How zero-knowledge budget sync works | CB Tech Ninja Software">
+<meta property="og:description" content="How jBudget Online&#x27;s zero-knowledge sync works: local encryption, pairing-phrase keys, AES-256-GCM ciphertext and relay or Google Drive transport.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="theme-jbudget">
+<header class="site"><div class="wrap">
+<a class="brand" href="../../../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../jbudget-online.html">jBudget Online</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">How zero-knowledge budget sync works</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">How zero-knowledge budget sync works</h1><p class="lead">Syncing a household budget without letting the server read it: keys, ciphertext and what travels where.</p></div>
+<article class="prose article" style="padding-top:24px">
+<h2>The idea</h2>
+<p>&ldquo;Zero-knowledge&rdquo; here means the server holding your synced data can't read it. Your devices encrypt before sending and decrypt after receiving; the server never has the key.</p>
+<h2>The pieces</h2>
+<ul><li><strong>Local storage:</strong> each device keeps an encrypted database (SQLCipher, AES-256).</li><li><strong>Keys:</strong> derived from a pairing phrase that never leaves your devices.</li><li><strong>In transit and at rest on the relay:</strong> content is encrypted with AES-256-GCM before upload, so the relay stores and forwards only ciphertext.</li><li><strong>Transport:</strong> our relay, or a hidden app-data folder in your own Google Drive.</li></ul>
+<h2>What this protects against</h2>
+<p>If the relay's storage were stolen, the thieves would have ciphertext without the keys. The privacy policy puts it this way: your financial data would remain mathematically unreadable.</p>
+<h2>What it doesn't hide</h2>
+<p>Sync still has to know who is syncing. See <a href="what-the-server-can-see.html">what the server can and can't see</a>.</p>
+<h2>A caution about the pairing phrase</h2>
+<p>Because keys come from the pairing phrase and never leave your devices, there is no server-side copy to recover them from. Keep the phrase somewhere safe.</p>
+<h2>Sources</h2><ul><li><a href="https://cb-tech-ninja-software.github.io/jbudget-docs/jbudget-online-privacy.html" rel="noopener">jBudget Online privacy policy</a></li></ul>
+<div class="actions"><a class="btn ghost" href="index.html">&larr; All jBudget Online guides</a><a class="btn ghost" href="../../jbudget-online.html">jBudget Online</a></div>
+</article>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../../../support.html">Support</a> &middot; <a href="../../../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

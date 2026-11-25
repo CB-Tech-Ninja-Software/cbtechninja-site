@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How FitClip works | CB Tech Ninja Software</title>
+<meta name="description" content="A walk-through of how FitClip fits a video to a size limit: bitrate budget, resolution, a measured result and an honest &#x27;too long&#x27; message.">
+<meta property="og:title" content="How FitClip works | CB Tech Ninja Software">
+<meta property="og:description" content="A walk-through of how FitClip fits a video to a size limit: bitrate budget, resolution, a measured result and an honest &#x27;too long&#x27; message.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-fitclip">
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../index.html#apps">Apps</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><span class="eyebrow">Target size first</span><h1>How FitClip works</h1><p class="lead">What happens between dropping a video on FitClip and getting a file that fits.</p></div>
+<section style="padding-top:24px" class="prose how">
+<div class="feature"><h2>1. You choose the size, not the settings</h2><p>Most video tools ask for bitrate, resolution and codec. FitClip asks one question: how big can the file be? Choose Discord (10 MB), WhatsApp (16 MB) or Email (25 MB), or type your own limit.</p><p>Presets are a convenience. Services change their limits from time to time, so use Custom if yours is different.</p><img src="../images/fitclip-01-start.png" width="1012" height="562" alt="FitClip start screen with the limit picker set to Discord (10 MB)" loading="lazy"></div>
+<div class="feature"><h2>2. A bitrate budget from your clip's length</h2><p>Video size is mostly bitrate multiplied by duration, so FitClip divides your limit by the clip's length. It reserves a share of the limit for the file container and for rate-control overshoot, and sets aside 96 kbps for AAC audio. What is left is the video budget.</p><p>That is why short clips look better at a given size than long ones: the same number of bytes is spread over fewer seconds.</p></div>
+<div class="feature"><h2>3. Resolution chosen so the picture holds up</h2><p>FitClip picks an output resolution so there are enough bits per pixel for the picture to stay watchable. A tighter limit means a lower resolution rather than a smear of compression blocks. The result screen reports what it used, for example the codec, bitrate and frame size.</p></div>
+<div class="feature"><h2>4. Re-encoded to MP4 with H.264 and AAC</h2><p>The clip is transcoded with the video technology built into macOS into an MP4 with H.264 video and AAC audio. A progress bar shows how far along it is, and you can cancel at any time.</p><img src="../images/fitclip-04-progress.png" width="1012" height="562" alt="FitClip showing progress while fitting a video" loading="lazy"></div>
+<div class="feature"><h2>5. Measured, then retried if needed</h2><p>Estimates can be off, so FitClip measures the real size of the finished file. If it is over your limit, it retries with a lower video bitrate, up to three times, until it fits.</p><img src="../images/fitclip-02-result.png" width="1012" height="562" alt="FitClip result: 9.2 MB, was 20.2 MB" loading="lazy"></div>
+<div class="feature"><h2>6. An honest answer when it can't be done</h2><p>If a clip is too long for a limit and the video would drop below a watchable bitrate, FitClip says &ldquo;too long for this size&rdquo; instead of handing you something unwatchable. Choose a larger limit, or use a shorter clip.</p></div>
+<div class="feature"><h2>7. Your original stays untouched, and stays on your Mac</h2><p>FitClip writes a new file, with <code>-fit</code> added to the name where you save it. It has no accounts, ads, analytics, tracking or network access, so your video is never uploaded.</p></div>
+</section>
+<section class="prose" style="padding-top:8px"><p class="note"><strong>Coming soon to the Mac App Store.</strong> Price and release date to be announced. Requires macOS 14 or later.</p>
+<div class="actions"><a class="btn" href="fitclip.html#get">Availability</a><a class="btn ghost" href="fitclip/articles/index.html">Guides &amp; how-tos</a><a class="btn ghost" href="fitclip.html">&larr; FitClip</a></div></section>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

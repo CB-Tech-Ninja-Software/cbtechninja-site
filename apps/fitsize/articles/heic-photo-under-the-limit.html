@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uploading a HEIC photo: get a JPEG under the size limit | CB Tech Ninja Software</title>
+<meta name="description" content="How to turn a HEIC photo into a JPEG that fits an upload form&#x27;s size limit with FitSize, and what it does not do.">
+<meta property="og:title" content="Uploading a HEIC photo: get a JPEG under the size limit | CB Tech Ninja Software">
+<meta property="og:description" content="How to turn a HEIC photo into a JPEG that fits an upload form&#x27;s size limit with FitSize, and what it does not do.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="theme-fitsize">
+<header class="site"><div class="wrap">
+<a class="brand" href="../../../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../fitsize.html">FitSize</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">Uploading a HEIC photo: get a JPEG under the size limit</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Uploading a HEIC photo: get a JPEG under the size limit</h1><p class="lead">Photos from many phones are saved as HEIC, and some forms are fussy about file type and size. Here is how FitSize turns one into a JPEG that fits.</p></div>
+<article class="prose article" style="padding-top:24px">
+<h2>What FitSize does with a photo</h2>
+<ul><li>Accepts JPEG, PNG, HEIC and other common image types.</li><li>Always saves the result as a <strong>JPEG</strong>.</li><li>Scales the photo down and compresses it only as much as needed to get under your limit.</li><li>Leaves a photo that is already under the limit as it is, and tells you &ldquo;Already under limit&rdquo;.</li><li>Keeps the photo the right way up, and turns transparent areas white.</li></ul>
+<h2>Steps</h2>
+<ol><li><strong>Check what the form accepts.</strong> The upload page tells you the allowed types and the size limit. Use those, not guesses.</li><li><strong>Drop the HEIC photo into FitSize</strong> and choose the limit (or Custom, such as <code>750 KB</code>).</li><li><strong>Click Fit, then Save.</strong> You get a <code>-fit</code> JPEG copy.</li></ol>
+<h2>What FitSize doesn't do</h2>
+<p>FitSize works to a file-size limit. It doesn't crop or resize to exact pixel dimensions, so it isn't a tool for forms that require a specific width and height in pixels (for example some ID-photo requirements). Check the form's rules for those.</p>
+<h2>Why the quality changes</h2>
+<p>A smaller limit means a smaller or more compressed image. FitSize tries the gentlest settings that fit, so a 5 MB limit costs little and a 200 KB limit costs more. If the limit is so small that the photo would be unreadable, FitSize says so instead of producing it: see <a href="when-the-limit-is-too-small.html">when a limit is too small</a>.</p>
+<div class="actions"><a class="btn ghost" href="index.html">&larr; All FitSize guides</a><a class="btn ghost" href="../../fitsize.html">FitSize</a></div>
+</article>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../../../support.html">Support</a> &middot; <a href="../../../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

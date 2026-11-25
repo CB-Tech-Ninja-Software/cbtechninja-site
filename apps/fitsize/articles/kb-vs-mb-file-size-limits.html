@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KB vs MB: how file-size limits are counted | CB Tech Ninja Software</title>
+<meta name="description" content="How file-size limits are counted (decimal vs binary KB and MB), with the arithmetic, and why FitSize uses decimal units.">
+<meta property="og:title" content="KB vs MB: how file-size limits are counted | CB Tech Ninja Software">
+<meta property="og:description" content="How file-size limits are counted (decimal vs binary KB and MB), with the arithmetic, and why FitSize uses decimal units.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="theme-fitsize">
+<header class="site"><div class="wrap">
+<a class="brand" href="../../../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../fitsize.html">FitSize</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">KB vs MB: how file-size limits are counted</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">KB vs MB: how file-size limits are counted</h1><p class="lead">Why a file that looks like 2 MB can still be rejected by a 2 MB limit, and how FitSize avoids the problem.</p></div>
+<article class="prose article" style="padding-top:24px">
+<h2>Two ways to count</h2>
+<p>There are two conventions in everyday use. In the decimal convention, 1 KB is 1,000 bytes and 1 MB is 1,000,000 bytes. In the binary convention, 1 KB is 1,024 bytes and 1 MB is 1,048,576 bytes. Different operating systems, apps and websites use different ones, which is how a file can look like it is under a limit on your computer and over it on the portal.</p>
+<h2>The arithmetic</h2>
+<table style="width:100%;border-collapse:collapse"><thead><tr><th align="left">Limit</th><th align="left">Decimal bytes</th><th align="left">Binary bytes</th></tr></thead><tbody>
+<tr><td>200 KB</td><td>200,000</td><td>204,800</td></tr>
+<tr><td>2 MB</td><td>2,000,000</td><td>2,097,152</td></tr>
+<tr><td>5 MB</td><td>5,000,000</td><td>5,242,880</td></tr></tbody></table>
+<p>The decimal figure is always the smaller one. A file under 2,000,000 bytes is under 2 MB by either convention.</p>
+<h2>What FitSize does</h2>
+<p>FitSize uses decimal units on purpose, so the copy it gives you passes whichever way the portal counts. It also measures the real size of the finished file instead of estimating it.</p>
+<h2>Practical tips</h2>
+<ul><li>If a file is only just under the limit and still gets rejected, choose a slightly lower limit, such as <code>1.9 MB</code> for a 2 MB form.</li><li>Type custom limits with a unit: <code>750 KB</code>, <code>1.5 MB</code>.</li></ul>
+<div class="actions"><a class="btn ghost" href="index.html">&larr; All FitSize guides</a><a class="btn ghost" href="../../fitsize.html">FitSize</a></div>
+</article>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../../../support.html">Support</a> &middot; <a href="../../../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

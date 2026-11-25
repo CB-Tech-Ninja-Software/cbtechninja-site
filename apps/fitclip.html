@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FitClip — coming soon to the Mac App Store | CB Tech Ninja Software</title>
-<meta name="description" content="FitClip makes a video fit a size limit for Discord, email or WhatsApp, entirely on your Mac.">
+<title>FitClip: make a video fit Discord, WhatsApp or email limits on your Mac | CB Tech Ninja Software</title>
+<meta name="description" content="FitClip shrinks a video to fit a size limit such as Discord, WhatsApp or email, entirely on your Mac. Pick a limit, drop in the clip, get an MP4 under it. Coming soon to the Mac App Store.">
+<meta property="og:title" content="FitClip: make a video fit Discord, WhatsApp or email limits on your Mac | CB Tech Ninja Software">
+<meta property="og:description" content="FitClip shrinks a video to fit a size limit such as Discord, WhatsApp or email, entirely on your Mac. Pick a limit, drop in the clip, get an MP4 under it. Coming soon to the Mac App Store.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -15,17 +20,45 @@
 </div></header>
 <main><div class="wrap">
 <div class="page-head"><span class="eyebrow">Coming soon to the Mac App Store</span>
-<h1>FitClip</h1>
-<p class="lead">Make a video fit the limit for Discord, email or WhatsApp, at the best quality that still fits.</p></div>
+<div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-fitclip" style="width:72px;height:72px;font-size:1.5rem" aria-hidden="true">FC</div><h1 style="margin:0">FitClip</h1></div></div>
+<p class="lead">For Mac users who keep hitting &ldquo;file too large&rdquo; when they send a video. Pick the limit, drop in the clip, and get an MP4 that fits, at the best quality that still fits.</p>
+<div class="actions"><a class="btn" href="fitclip-how-it-works.html">How it works</a><a class="btn ghost" href="fitclip/articles/index.html">Guides</a><a class="btn ghost" href="#get">Availability</a></div>
+<p style="color:var(--ink-soft);font-size:.95rem;margin:18px 0 0"><strong>Original untouched</strong> &middot; <strong>Real size checked</strong> &middot; <strong>Nothing leaves your Mac</strong></p></div>
+<div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"><img src="../images/fitclip-01-start.png" alt="FitClip window with a dashed drop zone, the accepted types (MP4, MOV, M4V) and the limit picker set to Discord (10 MB)" width="1012" height="562" loading="lazy"></div>
 <section style="padding-top:24px" class="prose">
-<h2>What it does</h2>
-<ul class="ticks"><li>Drop a video on the window.</li><li>Pick a target such as Discord, email or WhatsApp, or type your own size.</li><li>Get a copy that fits, with the original left untouched.</li></ul>
+<h2>The problem: the clip is bigger than the limit</h2>
+<p>You recorded a clip and the chat app, email or upload form says it is too large. Most video tools make you guess at bitrates and resolutions, then try again until it fits. FitClip works the other way round: you tell it the size you need, and it works out the rest.</p>
+<ul class="ticks"><li>Messaging and email services each cap how big a file can be, and the caps change from time to time.</li><li>Guessing at export settings wastes time, and you only find out it was wrong after the upload fails.</li><li>Online compressors need you to upload the video first, which you may not want to do.</li></ul>
+<h2>How it works</h2>
+<ol><li><strong>Drop a video</strong> onto the window, or click Choose file. MP4, MOV and M4V are accepted.</li><li><strong>Pick a limit:</strong> Discord (10 MB), WhatsApp (16 MB), Email (25 MB), or type your own size.</li><li><strong>Click Fit,</strong> watch the progress (you can cancel any time), then Save. Your original is never changed.</li></ol>
+<p>Behind the scenes, FitClip works out how much data your clip can use, re-encodes it as H.264 video with AAC audio in an MP4, then checks the real size of the result. If it comes out slightly over, it tries again at a lower bitrate. You get a file under your limit, or a clear message if it can't be done. <a href="fitclip-how-it-works.html">Read the full walk-through.</a></p>
+<h2>Features</h2>
+<ul class="ticks"><li><strong>Target size first.</strong> You choose the limit; FitClip does the bitrate maths.</li><li><strong>Checked, not estimated.</strong> The size of the finished file is measured, and it retries at a lower bitrate if it lands over.</li><li><strong>Presets and custom.</strong> Discord (10 MB), WhatsApp (16 MB), Email (25 MB), or any size you type.</li><li><strong>Honest about the trade-off.</strong> If a clip is too long for a limit, it says &ldquo;too long for this size&rdquo; instead of producing mush.</li><li><strong>Cancel any time,</strong> with a progress bar while it works.</li><li><strong>Private by design.</strong> No accounts, ads, analytics, tracking or network access.</li></ul>
+</section>
+<section style="padding-top:8px"><h2>Screenshots</h2><div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"><img src="../images/fitclip-01-start.png" alt="FitClip window with a dashed drop zone, the accepted types (MP4, MOV, M4V) and the limit picker set to Discord (10 MB)" width="1012" height="562" loading="lazy"><img src="../images/fitclip-04-progress.png" alt="FitClip working on a video with a progress bar and a Cancel button" width="1012" height="562" loading="lazy"><img src="../images/fitclip-02-result.png" alt="FitClip result screen: 9.2 MB (was 20.2 MB), H.264 5375 kbps 1228x690, with Save and Fit another buttons" width="1012" height="562" loading="lazy"><img src="../images/fitclip-03-custom.png" alt="FitClip result screen after fitting a 20.2 MB clip down to 4.1 MB, H.264 2687 kbps 818x460" width="1012" height="562" loading="lazy"></div><p style="color:var(--ink-soft);font-size:.9rem;margin-top:14px">Screenshots are from pre-release builds with a synthetic test clip.</p></section>
+<section style="padding-top:24px" class="prose">
+<h2 id="get">Availability</h2>
+<p class="note"><strong>Coming soon to the Mac App Store.</strong> FitClip is in development and has no store listing yet, so there is no download link. Price and release date to be announced. Requires macOS 14 or later.</p>
+<h2>Good to know</h2>
+<ul class="ticks"><li>Output is always an MP4 (H.264 video, AAC audio).</li><li>Sizes use decimal units (1 MB = 1,000,000 bytes).</li><li>One video at a time; no trimming or effects.</li></ul>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>Does FitClip change my original video?</summary><p>No. It writes a new MP4 copy, with <code>-fit</code> added to the name where you choose to save it. The original is never modified.</p></details>
+<details class="faq"><summary>What video files can I drop in?</summary><p>MP4, MOV and M4V. The result is always an MP4 with H.264 video and AAC audio.</p></details>
+<details class="faq"><summary>What if my clip is too long to fit the limit?</summary><p>FitClip tells you it is too long for that size rather than handing you something unwatchable. Pick a larger limit, or use a shorter clip.</p></details>
+<details class="faq"><summary>Are the Discord, WhatsApp and Email presets guaranteed to match the services?</summary><p>No. The presets (Discord 10 MB, WhatsApp 16 MB, Email 25 MB) are a convenience. Services change their limits from time to time, so if yours is different, choose Custom and type your own size.</p></details>
+<details class="faq"><summary>Does my video get uploaded anywhere?</summary><p>No. FitClip has no accounts, ads, analytics, tracking or network access. Everything happens on your Mac using the video technology built into macOS.</p></details>
+<details class="faq"><summary>How much does it cost, and when is it out?</summary><p>FitClip is in development and not yet on the Mac App Store. Price and release date have not been announced.</p></details>
+<details class="faq"><summary>What does it need?</summary><p>macOS 14 or later.</p></details>
+<details class="faq"><summary>Can it trim or edit my clip?</summary><p>No. FitClip does not trim, edit or add effects, and it handles one video at a time. It only makes the file fit.</p></details>
+
+<h2>Guides</h2>
+<p>Discord and email limits, how the size maths works, and what to do when a clip is too long: <a href="fitclip/articles/index.html">browse the FitClip guides</a>.</p>
 <h2>Privacy</h2>
 <p class="note">Your files never leave your Mac. No accounts, no tracking. <a href="../privacy.html">Read the privacy policy</a>.</p>
-<h2>Availability</h2>
-<p>FitClip is in development and is not yet on the Mac App Store. Price and release date to be announced.</p>
-<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="../support.html">Support</a></div>
-</section></div></main>
+<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="fitclip-how-it-works.html">How it works</a><a class="btn ghost" href="../support.html">Support</a></div>
+</section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does FitClip change my original video?", "acceptedAnswer": {"@type": "Answer", "text": "No. It writes a new MP4 copy, with -fit added to the name where you choose to save it. The original is never modified."}}, {"@type": "Question", "name": "What video files can I drop in?", "acceptedAnswer": {"@type": "Answer", "text": "MP4, MOV and M4V. The result is always an MP4 with H.264 video and AAC audio."}}, {"@type": "Question", "name": "What if my clip is too long to fit the limit?", "acceptedAnswer": {"@type": "Answer", "text": "FitClip tells you it is too long for that size rather than handing you something unwatchable. Pick a larger limit, or use a shorter clip."}}, {"@type": "Question", "name": "Are the Discord, WhatsApp and Email presets guaranteed to match the services?", "acceptedAnswer": {"@type": "Answer", "text": "No. The presets (Discord 10 MB, WhatsApp 16 MB, Email 25 MB) are a convenience. Services change their limits from time to time, so if yours is different, choose Custom and type your own size."}}, {"@type": "Question", "name": "Does my video get uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. FitClip has no accounts, ads, analytics, tracking or network access. Everything happens on your Mac using the video technology built into macOS."}}, {"@type": "Question", "name": "How much does it cost, and when is it out?", "acceptedAnswer": {"@type": "Answer", "text": "FitClip is in development and not yet on the Mac App Store. Price and release date have not been announced."}}, {"@type": "Question", "name": "What does it need?", "acceptedAnswer": {"@type": "Answer", "text": "macOS 14 or later."}}, {"@type": "Question", "name": "Can it trim or edit my clip?", "acceptedAnswer": {"@type": "Answer", "text": "No. FitClip does not trim, edit or add effects, and it handles one video at a time. It only makes the file fit."}}]}</script>
+</div></main>
 <footer><div class="wrap">
 <span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
 <span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>

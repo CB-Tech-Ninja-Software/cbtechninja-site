@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FitSize — coming soon to the Mac App Store | CB Tech Ninja Software</title>
-<meta name="description" content="FitSize makes a PDF or photo fit an upload limit, entirely on your Mac.">
+<title>FitSize: shrink a PDF or photo to an upload limit on your Mac | CB Tech Ninja Software</title>
+<meta name="description" content="FitSize makes a PDF or photo fit a size limit such as 200 KB, 2 MB or 5 MB, entirely on your Mac, for job, visa, school and government upload forms. Coming soon to the Mac App Store.">
+<meta property="og:title" content="FitSize: shrink a PDF or photo to an upload limit on your Mac | CB Tech Ninja Software">
+<meta property="og:description" content="FitSize makes a PDF or photo fit a size limit such as 200 KB, 2 MB or 5 MB, entirely on your Mac, for job, visa, school and government upload forms. Coming soon to the Mac App Store.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -15,18 +20,46 @@
 </div></header>
 <main><div class="wrap">
 <div class="page-head"><span class="eyebrow">Coming soon to the Mac App Store</span>
-<h1>FitSize</h1>
-<p class="lead">Make a PDF or photo fit the upload limit, without uploading it anywhere.</p></div>
+<div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-fitsize" style="width:72px;height:72px;font-size:1.5rem" aria-hidden="true">FS</div><h1 style="margin:0">FitSize</h1></div></div>
+<p class="lead">For anyone staring at an upload form that says &ldquo;file too large&rdquo;: job applications, visa and school portals, government forms. Pick the limit, drop in the PDF or photo, and get a copy that fits, without uploading it anywhere.</p>
+<div class="actions"><a class="btn" href="fitsize-how-it-works.html">How it works</a><a class="btn ghost" href="fitsize/articles/index.html">Guides</a><a class="btn ghost" href="#get">Availability</a></div>
+<p style="color:var(--ink-soft);font-size:.95rem;margin:18px 0 0"><strong>Original untouched</strong> &middot; <strong>Real size checked</strong> &middot; <strong>Nothing leaves your Mac</strong></p></div>
+<div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"><img src="../images/fitsize-01-start.png" alt="FitSize window with a dashed drop zone for photos (JPG, PNG, HEIC) and PDFs, and the limit picker set to 500 KB" width="1012" height="562" loading="lazy"></div>
 <section style="padding-top:24px" class="prose">
-<h2>What it does</h2>
-<ul class="ticks"><li>Drop a PDF or photo on the window.</li><li>Pick a limit, such as 200 KB, 2 MB or 5 MB, or type your own.</li><li>Get a copy that fits, with a before and after preview. Your original stays untouched.</li></ul>
-<p>For job, visa, school and government upload forms that say "file too large".</p>
+<h2>The problem: the form says 2 MB and your file is 6 MB</h2>
+<p>Upload portals set a size limit and reject anything over it. The usual fixes are awkward: an online compressor means uploading your passport scan or CV to a stranger's server, and a generic compressor won't tell you whether the result is actually under the limit.</p>
+<ul class="ticks"><li>You need a specific number (200 KB, 500 KB, 2 MB, 5 MB), not a vague &ldquo;smaller&rdquo;.</li><li>The documents are often personal: IDs, transcripts, CVs, tax forms.</li><li>You want to know the copy really is under the limit before you try the upload again.</li></ul>
+<h2>How it works</h2>
+<ol><li><strong>Drop a PDF or a photo</strong> onto the window, or click Choose file.</li><li><strong>Pick a limit:</strong> 200 KB, 500 KB, 1 MB, 2 MB, 5 MB, or type your own such as <code>750 KB</code> or <code>1.5 MB</code>.</li><li><strong>Click Fit, then Save.</strong> Your original is never changed.</li></ol>
+<p>FitSize measures the real size of the result, so the copy it gives you is under your limit. <a href="fitsize-how-it-works.html">Read the full walk-through.</a></p>
+<h2>Features</h2>
+<ul class="ticks"><li><strong>Target size first.</strong> Presets from 200 KB to 5 MB, or any size you type.</li><li><strong>Photos:</strong> JPEG, PNG, HEIC and other common image types, saved as a JPEG copy, scaled and compressed only as much as needed.</li><li><strong>PDFs:</strong> images inside are recompressed and text stays selectable. If that isn't enough, it rebuilds pages as images and warns you first.</li><li><strong>Before and after sizes</strong> on the result screen, so you can see what you got.</li><li><strong>Honest when it can't:</strong> if a limit is too small, it says so and shows the smallest size it reached.</li><li><strong>Private by design.</strong> No accounts, ads, analytics, tracking or network access.</li></ul>
+</section>
+<section style="padding-top:8px"><h2>Screenshots</h2><div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))"><img src="../images/fitsize-01-start.png" alt="FitSize window with a dashed drop zone for photos (JPG, PNG, HEIC) and PDFs, and the limit picker set to 500 KB" width="1012" height="562" loading="lazy"><img src="../images/fitsize-05-custom.png" alt="FitSize with a HEIC photo loaded and a custom limit of 750 KB typed in" width="1012" height="562" loading="lazy"><img src="../images/fitsize-03-pdf-result.png" alt="FitSize PDF result: 497.5 KB (was 1.9 MB), text kept, images compressed, 96 dpi, JPEG quality 71%" width="1012" height="562" loading="lazy"><img src="../images/fitsize-02-photo-result.png" alt="FitSize result for a file that was already under the limit: 101.7 KB (was 101.7 KB), Already under limit" width="1012" height="562" loading="lazy"><img src="../images/fitsize-04-too-small.png" alt="FitSize result for a photo shrunk to a very small limit: 4.9 KB (was 101.7 KB), JPEG quality 74%, 10% size" width="1012" height="562" loading="lazy"></div><p style="color:var(--ink-soft);font-size:.9rem;margin-top:14px">Screenshots are from pre-release builds with synthetic test files.</p></section>
+<section style="padding-top:24px" class="prose">
+<h2 id="get">Availability</h2>
+<p class="note"><strong>Coming soon to the Mac App Store.</strong> FitSize is in development and has no store listing yet, so there is no download link. Price and release date to be announced. Requires macOS 14 or later.</p>
+<h2>Good to know</h2>
+<ul class="ticks"><li>Sizes use decimal units (1 MB = 1,000,000 bytes), so a file under 2 MB is under 2 MB by either common counting method.</li><li>Output is a copy with <code>-fit</code> added to the name, saved where you choose.</li><li>Photos are always saved as JPEG; transparent areas become white.</li><li>It does not edit photos to exact pixel dimensions. One file at a time.</li></ul>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>Does FitSize change my original file?</summary><p>No. It makes a copy, named with <code>-fit</code> added, saved where you choose. The original stays untouched.</p></details>
+<details class="faq"><summary>What files does it take?</summary><p>Photos (JPEG, PNG, HEIC and other common image types) and PDFs. One file at a time.</p></details>
+<details class="faq"><summary>Will my PDF text still be selectable?</summary><p>FitSize first recompresses the images inside the PDF and keeps your text selectable. If that isn't enough to reach your limit, it falls back to rebuilding each page as an image, and warns you first: in that case text in the smaller copy cannot be selected or searched. Page count and page size stay the same.</p></details>
+<details class="faq"><summary>What format do photos come out as?</summary><p>Always JPEG. Transparent areas become white. A photo already under your limit is left as it is.</p></details>
+<details class="faq"><summary>What if my limit is too small?</summary><p>FitSize tells you plainly and shows the smallest size it managed, so you can try a larger limit rather than getting an unreadable file.</p></details>
+<details class="faq"><summary>Can it resize a photo to exact pixel dimensions, like for a passport photo?</summary><p>No. FitSize works to a file-size limit, not to exact pixel dimensions.</p></details>
+<details class="faq"><summary>Does anything get uploaded?</summary><p>No. FitSize has no accounts, ads, analytics, tracking or network access. Everything happens on your Mac.</p></details>
+<details class="faq"><summary>How much is it and when is it out?</summary><p>FitSize is in development and not yet on the Mac App Store. Price and release date have not been announced.</p></details>
+<details class="faq"><summary>What does it need?</summary><p>macOS 14 or later.</p></details>
+
+<h2>Guides</h2>
+<p>PDFs for upload portals, HEIC photos, how KB and MB are counted, and what to do when a limit is too small: <a href="fitsize/articles/index.html">browse the FitSize guides</a>.</p>
 <h2>Privacy</h2>
 <p class="note">Your files never leave your Mac. No accounts, no tracking. <a href="../privacy.html">Read the privacy policy</a>.</p>
-<h2>Availability</h2>
-<p>FitSize is in development and is not yet on the Mac App Store. Price and release date to be announced.</p>
-<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="../support.html">Support</a></div>
-</section></div></main>
+<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="fitsize-how-it-works.html">How it works</a><a class="btn ghost" href="../support.html">Support</a></div>
+</section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does FitSize change my original file?", "acceptedAnswer": {"@type": "Answer", "text": "No. It makes a copy, named with -fit added, saved where you choose. The original stays untouched."}}, {"@type": "Question", "name": "What files does it take?", "acceptedAnswer": {"@type": "Answer", "text": "Photos (JPEG, PNG, HEIC and other common image types) and PDFs. One file at a time."}}, {"@type": "Question", "name": "Will my PDF text still be selectable?", "acceptedAnswer": {"@type": "Answer", "text": "FitSize first recompresses the images inside the PDF and keeps your text selectable. If that isn't enough to reach your limit, it falls back to rebuilding each page as an image, and warns you first: in that case text in the smaller copy cannot be selected or searched. Page count and page size stay the same."}}, {"@type": "Question", "name": "What format do photos come out as?", "acceptedAnswer": {"@type": "Answer", "text": "Always JPEG. Transparent areas become white. A photo already under your limit is left as it is."}}, {"@type": "Question", "name": "What if my limit is too small?", "acceptedAnswer": {"@type": "Answer", "text": "FitSize tells you plainly and shows the smallest size it managed, so you can try a larger limit rather than getting an unreadable file."}}, {"@type": "Question", "name": "Can it resize a photo to exact pixel dimensions, like for a passport photo?", "acceptedAnswer": {"@type": "Answer", "text": "No. FitSize works to a file-size limit, not to exact pixel dimensions."}}, {"@type": "Question", "name": "Does anything get uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. FitSize has no accounts, ads, analytics, tracking or network access. Everything happens on your Mac."}}, {"@type": "Question", "name": "How much is it and when is it out?", "acceptedAnswer": {"@type": "Answer", "text": "FitSize is in development and not yet on the Mac App Store. Price and release date have not been announced."}}, {"@type": "Question", "name": "What does it need?", "acceptedAnswer": {"@type": "Answer", "text": "macOS 14 or later."}}]}</script>
+</div></main>
 <footer><div class="wrap">
 <span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
 <span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>

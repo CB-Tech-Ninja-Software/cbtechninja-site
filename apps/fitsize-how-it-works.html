@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How FitSize works | CB Tech Ninja Software</title>
+<meta name="description" content="A walk-through of how FitSize fits a PDF or photo to a size limit: the limit picker, photo and PDF handling, a measured result and a plain-language failure message.">
+<meta property="og:title" content="How FitSize works | CB Tech Ninja Software">
+<meta property="og:description" content="A walk-through of how FitSize fits a PDF or photo to a size limit: the limit picker, photo and PDF handling, a measured result and a plain-language failure message.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-fitsize">
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../index.html#apps">Apps</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><span class="eyebrow">Target size first</span><h1>How FitSize works</h1><p class="lead">What happens between dropping a PDF or photo on FitSize and getting a copy that is guaranteed under your limit.</p></div>
+<section style="padding-top:24px" class="prose how">
+<div class="feature"><h2>1. Pick the limit the form asks for</h2><p>The limit picker offers 200 KB, 500 KB, 1 MB, 2 MB and 5 MB, or Custom: type <code>750 KB</code> or <code>1.5 MB</code> and it is checked as you type. Sizes use decimal units (1 MB = 1,000,000 bytes), so a copy under 2 MB is under 2 MB however the portal counts.</p><img src="../images/fitsize-05-custom.png" width="1012" height="562" alt="FitSize with a HEIC photo loaded and a custom limit of 750 KB" loading="lazy"></div>
+<div class="feature"><h2>2. Photos: scale, then compress, only as much as needed</h2><p>Photos (JPEG, PNG, HEIC and other common types) are saved as a JPEG copy. If the photo is already under your limit it is left as it is. Otherwise FitSize tries gentler settings first and steps down to a smaller size only when it has to, so you keep as much quality as the limit allows. The photo's orientation is preserved, and transparent areas become white.</p><img src="../images/fitsize-02-photo-result.png" width="1012" height="562" alt="FitSize reporting Already under limit" loading="lazy"></div>
+<div class="feature"><h2>3. PDFs: keep the text if possible</h2><p>For PDFs, FitSize first recompresses the images inside the document and keeps your text selectable. The result screen says so: &ldquo;Text kept, images compressed&rdquo;. Page count and page size stay the same.</p><img src="../images/fitsize-03-pdf-result.png" width="1012" height="562" alt="FitSize PDF result: 497.5 KB, was 1.9 MB" loading="lazy"></div>
+<div class="feature"><h2>4. The fallback, with a warning</h2><p>If recompressing the images can't reach your limit, FitSize can rebuild each page as an image instead. It warns you before doing this, because in that case text in the smaller copy cannot be selected or searched. If you need searchable text, try a larger limit.</p></div>
+<div class="feature"><h2>5. The real size is measured</h2><p>FitSize doesn't estimate. It measures the finished file, so the copy it hands you really is under your limit.</p></div>
+<div class="feature"><h2>6. A plain answer when a limit is too small</h2><p>If the limit is too small to reach without making the file unreadable, FitSize says so and shows the smallest size it managed, so you can try a larger limit.</p></div>
+<div class="feature"><h2>7. Original untouched, nothing uploaded</h2><p>FitSize saves a copy with <code>-fit</code> added to the name where you choose. It has no accounts, ads, analytics, tracking or network access, so your documents never leave your Mac.</p></div>
+</section>
+<section class="prose" style="padding-top:8px"><p class="note"><strong>Coming soon to the Mac App Store.</strong> Price and release date to be announced. Requires macOS 14 or later.</p>
+<div class="actions"><a class="btn" href="fitsize.html#get">Availability</a><a class="btn ghost" href="fitsize/articles/index.html">Guides &amp; how-tos</a><a class="btn ghost" href="fitsize.html">&larr; FitSize</a></div></section>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

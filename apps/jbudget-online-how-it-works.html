@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How jBudget Online works | CB Tech Ninja Software</title>
+<meta name="description" content="How jBudget Online&#x27;s end-to-end encrypted sync works: local encrypted databases, pairing phrase keys, relay or Google Drive transport and offline-first merging.">
+<meta property="og:title" content="How jBudget Online works | CB Tech Ninja Software">
+<meta property="og:description" content="How jBudget Online&#x27;s end-to-end encrypted sync works: local encrypted databases, pairing phrase keys, relay or Google Drive transport and offline-first merging.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-jbudget">
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../index.html#apps">Apps</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a><a href="../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap">
+<div class="page-head"><span class="eyebrow">Zero-knowledge sync</span><h1>How jBudget Online works</h1><p class="lead">How a household shares one budget while the server only ever sees ciphertext.</p></div>
+<section style="padding-top:24px" class="prose how">
+<div class="feature"><h2>1. It starts on your device</h2><p>Your accounts, balances, income, bills, debts, savings goals and transactions live in an encrypted database (SQLCipher, AES-256) on each of your own devices. Using the app doesn't require an account with us, and if you never turn on sync it makes no connection to our servers.</p><img class="phone" src="../images/jbudget-online-plan.png" width="1080" height="2160" alt="jBudget Online plan screen, demo data" loading="lazy"></div>
+<div class="feature"><h2>2. A pairing phrase makes the keys</h2><p>To share a budget, devices are paired with a pairing phrase. Encryption keys are derived from it, and neither the phrase nor the keys leave your devices.</p></div>
+<div class="feature"><h2>3. Encrypted before it leaves</h2><p>Changes are encrypted with AES-256-GCM on your device. What travels is unreadable ciphertext, so we can't decrypt your budget and neither can anyone at the hosting provider.</p></div>
+<div class="feature"><h2>4. Relay or your own Google Drive</h2><p>Sync can go through a relay we operate on Cloudflare's platform, or through a hidden app-data folder in your own Google Drive. In both cases the content stays end-to-end encrypted. The relay can see your sign-in email and sync metadata (device IDs, timestamps, sequence numbers, blob sizes) and nothing about your finances.</p></div>
+<div class="feature"><h2>5. Offline for weeks, converging cleanly</h2><p>Devices can edit offline for weeks. When they reconnect, their changes converge rather than overwrite each other.</p></div>
+<div class="feature"><h2>6. Deleting is real deletion</h2><p>Uninstalling removes the local database. You can ask us to delete your email, sync metadata and encrypted blobs from the relay, and because only your devices hold the keys, removing the app from all devices also makes any remaining ciphertext permanently unreadable.</p></div>
+</section>
+<section class="prose" style="padding-top:8px"><p class="note"><strong>In pre-launch testing.</strong> Not yet available to download. Android and Windows.</p>
+<div class="actions"><a class="btn" href="jbudget-online.html#get">Availability</a><a class="btn ghost" href="jbudget-online/articles/index.html">Guides &amp; how-tos</a><a class="btn ghost" href="jbudget-online.html">&larr; jBudget Online</a></div></section>
+</div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

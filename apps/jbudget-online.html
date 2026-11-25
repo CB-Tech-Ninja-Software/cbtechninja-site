@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>jBudget Online — household budgeting with zero-knowledge sync | CB Tech Ninja Software</title>
-<meta name="description" content="Household budgeting with end-to-end encrypted sync: couples and families share one budget across phones and desktops. Pre-launch testing.">
+<title>jBudget Online: household budgeting with zero-knowledge sync | CB Tech Ninja Software</title>
+<meta name="description" content="jBudget Online lets couples and families share one household budget across phones and desktops, with end-to-end encrypted sync the server cannot read. Pre-launch testing on Android and Windows.">
+<meta property="og:title" content="jBudget Online: household budgeting with zero-knowledge sync | CB Tech Ninja Software">
+<meta property="og:description" content="jBudget Online lets couples and families share one household budget across phones and desktops, with end-to-end encrypted sync the server cannot read. Pre-launch testing on Android and Windows.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 </head>
@@ -16,19 +21,42 @@
 <main><div class="wrap">
 <div class="page-head"><span class="eyebrow">Pre-launch testing</span>
 <div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-jbudget" style="width:72px;height:72px;font-size:1.5rem" aria-hidden="true">jO</div><h1 style="margin:0">jBudget Online</h1></div></div>
-<p class="lead">Household budgeting with zero-knowledge sync: couples and families share one budget across phones and desktops, and the server only stores ciphertext it cannot read.</p></div>
+<p class="lead">For couples and families who want to share one budget across phones and desktops without handing it to a server that can read it. Zero-knowledge sync: the relay only stores ciphertext it cannot decrypt.</p>
+<div class="actions"><a class="btn" href="jbudget-online-how-it-works.html">How it works</a><a class="btn ghost" href="jbudget-online/articles/index.html">Guides</a><a class="btn ghost" href="#get">Availability</a></div>
+<p style="color:var(--ink-soft);font-size:.95rem;margin:18px 0 0"><strong>End-to-end</strong> encrypted &middot; <strong>Offline-first</strong> &middot; <strong>Sync is optional</strong></p></div>
+<div class="shots" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"><img class="phone" src="../images/jbudget-online-plan.png" alt="jBudget Online Debt Payoff Plan screen on Android with a payoff strategy toggle, debt-free date and an account activity list, demo data" width="1080" height="2160" loading="lazy"></div><p style="color:var(--ink-soft);font-size:.9rem;margin-top:14px">Screenshot uses synthetic demo data.</p>
 <section style="padding-top:24px" class="prose">
+<h2>The problem: one household, several devices</h2>
+<p>A household budget lives on more than one phone or computer. Syncing usually means an account on someone's server holding your plain-text finances. jBudget Online keeps the household in step without that trade-off.</p>
+<ul class="ticks"><li>Everyone in the household sees the same accounts, bills and plan.</li><li>The server can't read your finances, even if it were stolen.</li><li>Edits made offline merge cleanly when devices reconnect.</li></ul>
+<h2>How it works</h2>
+<ol><li><strong>Budget on your own device.</strong> Data lives in an encrypted database (SQLCipher, AES-256) on each device. No account with us is needed to use the app.</li><li><strong>Optionally turn on sync.</strong> Pair devices with a pairing phrase. Keys are derived from it and never leave your devices.</li><li><strong>Changes are encrypted before they leave.</strong> AES-256-GCM is applied on your device; the relay or your Google Drive app-data folder stores only ciphertext.</li><li><strong>Devices converge.</strong> Edit offline for weeks and the devices merge cleanly when they reconnect.</li></ol>
+<p><a href="jbudget-online-how-it-works.html">See the full walk-through.</a></p>
 <h2>Features</h2>
-<ul class="ticks"><li><strong>One shared household budget</strong> across phones and desktops.</li><li><strong>End-to-end encryption.</strong> AES-256-GCM is applied on your device, and keys derive from a pairing phrase that never leaves your devices. The server stores only ciphertext it cannot decrypt.</li><li><strong>Encrypted on every device.</strong> Budget data lives in an encrypted database (SQLCipher, AES-256) on each of your own devices.</li><li><strong>Offline-first.</strong> Devices can edit offline for weeks and converge cleanly when they reconnect.</li><li><strong>Sync is optional.</strong> If you never turn on sync, the app makes no connection to our servers. Sync can use our relay or your own Google Drive app-data folder.</li><li><strong>Platforms:</strong> Android and Windows.</li></ul>
+<ul class="ticks"><li><strong>One shared household budget</strong> across phones and desktops.</li><li><strong>End-to-end encryption.</strong> AES-256-GCM on your device; keys derive from a pairing phrase that never leaves your devices. The server stores only ciphertext it cannot decrypt.</li><li><strong>Encrypted on every device.</strong> SQLCipher (AES-256) database on each of your own devices.</li><li><strong>Offline-first.</strong> Devices can edit offline for weeks and converge cleanly.</li><li><strong>Sync is optional.</strong> If you never turn on sync, the app makes no connection to our servers. Sync can use our relay or your own Google Drive app-data folder.</li><li><strong>No analytics.</strong> No analytics, advertising or crash-reporting SDKs, and no telemetry.</li><li><strong>Platforms:</strong> Android and Windows.</li></ul>
 </section>
-
 <section style="padding-top:24px" class="prose">
-<h2>Availability</h2>
-<p class="note"><strong>In testing.</strong> jBudget Online is feature-complete and in pre-launch relay testing. It is not available to download yet, and there is no store listing to link to.</p><p>Looking for the single-device planner that is available today? See <a href="jbudget.html">jBudget</a>.</p>
+<h2 id="get">Availability</h2>
+<p class="note"><strong>In testing.</strong> jBudget Online is feature-complete and in pre-launch relay testing. It is not available to download yet, and there is no store listing to link to. Pricing hasn't been announced.</p>
+<p>Looking for the single-device planner that is available today? See <a href="jbudget.html">jBudget</a>.</p>
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>Can I download jBudget Online?</summary><p>Not yet. It is feature-complete and in pre-launch relay testing, and there is no store listing to link to.</p></details>
+<details class="faq"><summary>Which platforms?</summary><p>Android and Windows.</p></details>
+<details class="faq"><summary>Can the server read my budget?</summary><p>No. Data is encrypted on your device with AES-256-GCM using keys derived from your pairing phrase, which never leaves your devices. The relay stores only ciphertext it cannot decrypt.</p></details>
+<details class="faq"><summary>What does the server know about me?</summary><p>Per the privacy policy: the email address from Google sign-in (to know which budget you belong to) and sync metadata such as device IDs, timestamps, sequence numbers and encrypted blob sizes. No names, contacts, location or financial content.</p></details>
+<details class="faq"><summary>Do I have to use sync?</summary><p>No. If you never turn on sync, the app makes no connection to our servers. Sync can use our relay or your own Google Drive app-data folder.</p></details>
+<details class="faq"><summary>Can I edit offline?</summary><p>Yes. Devices can edit offline for weeks and converge cleanly when they reconnect.</p></details>
+<details class="faq"><summary>How is it different from jBudget?</summary><p>jBudget is the single-device debt payoff planner and is available today. jBudget Online is the household version, with encrypted sync across devices. See <a href="jbudget-online/articles/jbudget-vs-jbudget-online.html">jBudget vs. jBudget Online</a>.</p></details>
+<details class="faq"><summary>What will it cost?</summary><p>Pricing hasn't been announced.</p></details>
+
+<h2>Guides</h2>
+<p>How zero-knowledge sync works, what the server can see, and which jBudget you need: <a href="jbudget-online/articles/index.html">browse the guides</a>.</p>
 <h2>Privacy and terms</h2>
 <p><a href="https://cb-tech-ninja-software.github.io/jbudget-docs/jbudget-online-privacy.html">jBudget Online privacy policy</a>. The single-device jBudget app has its own <a href="https://cb-tech-ninja-software.github.io/jbudget-docs/privacy.html">privacy policy</a> and <a href="https://cb-tech-ninja-software.github.io/jbudget-docs/terms.html">terms of use</a>.</p>
-<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="../support.html">Support</a></div>
-</section></div></main>
+<div class="actions"><a class="btn ghost" href="../index.html#apps">&larr; All apps</a><a class="btn ghost" href="jbudget-online-how-it-works.html">How it works</a><a class="btn ghost" href="../support.html">Support</a></div>
+</section>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I download jBudget Online?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. It is feature-complete and in pre-launch relay testing, and there is no store listing to link to."}}, {"@type": "Question", "name": "Which platforms?", "acceptedAnswer": {"@type": "Answer", "text": "Android and Windows."}}, {"@type": "Question", "name": "Can the server read my budget?", "acceptedAnswer": {"@type": "Answer", "text": "No. Data is encrypted on your device with AES-256-GCM using keys derived from your pairing phrase, which never leaves your devices. The relay stores only ciphertext it cannot decrypt."}}, {"@type": "Question", "name": "What does the server know about me?", "acceptedAnswer": {"@type": "Answer", "text": "Per the privacy policy: the email address from Google sign-in (to know which budget you belong to) and sync metadata such as device IDs, timestamps, sequence numbers and encrypted blob sizes. No names, contacts, location or financial content."}}, {"@type": "Question", "name": "Do I have to use sync?", "acceptedAnswer": {"@type": "Answer", "text": "No. If you never turn on sync, the app makes no connection to our servers. Sync can use our relay or your own Google Drive app-data folder."}}, {"@type": "Question", "name": "Can I edit offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Devices can edit offline for weeks and converge cleanly when they reconnect."}}, {"@type": "Question", "name": "How is it different from jBudget?", "acceptedAnswer": {"@type": "Answer", "text": "jBudget is the single-device debt payoff planner and is available today. jBudget Online is the household version, with encrypted sync across devices. See jBudget vs. jBudget Online."}}, {"@type": "Question", "name": "What will it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Pricing hasn't been announced."}}]}</script>
+</div></main>
 <footer><div class="wrap">
 <span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
 <span><a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
