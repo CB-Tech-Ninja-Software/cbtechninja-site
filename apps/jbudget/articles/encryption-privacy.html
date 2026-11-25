@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Why Your Budget Should Be Private | CB Tech Ninja Software</title>
+<meta name="description" content="Understanding end-to-end encryption, how jBudget protects your financial data, and why it matters.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="theme-jbudget">
+<header class="site"><div class="wrap">
+<a class="brand" href="../../../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap"><div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../jbudget.html">jBudget</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">Why Your Budget Should Be Private</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Why Your Budget Should Be Private: jBudget's Encryption Approach</h1><p class="lead">How jBudget keeps your financial data private and what that means for your security.</p></div>
+<article class="prose article" style="padding-top:24px">
+                
+                <h2>Why This Matters</h2>
+                <p>Your budget contains sensitive information: account balances, income details, debt amounts, payment schedules. This is exactly the kind of data that should never leave your computer.</p>
+                <p>Many budgeting apps sync your data to the cloud for backup or multi-device access. That convenience comes with a cost: your financial data passes through someone else's servers, where it could be intercepted, stored, or subpoenaed.</p>
+                <p>jBudget takes a different approach: <strong>your data stays on your computer, encrypted.</strong></p>
+
+                <h2>The Cloud Tradeoff</h2>
+                <p>Cloud-based budgeting apps offer real advantages:</p>
+                <ul>
+                    <li><strong>Sync across devices:</strong> Check your budget on your phone, update it on your laptop</li>
+                    <li><strong>Automatic backup:</strong> Your data is safe even if your hard drive fails</li>
+                    <li><strong>Easier sharing:</strong> Partner accounts and collaborative planning</li>
+                </ul>
+                <p>But they come with privacy costs:</p>
+                <ul>
+                    <li><strong>Data on someone else's servers:</strong> Your budget data is stored in data centers you don't control</li>
+                    <li><strong>Legal exposure:</strong> Your data can be subpoenaed in litigation, or accessed by government request</li>
+                    <li><strong>Breach risk:</strong> If a company's security fails, your financial data is at risk</li>
+                    <li><strong>Business model alignment:</strong> Some apps monetize user data through anonymized analytics or sell insights to third parties</li>
+                </ul>
+
+                <h2>How jBudget Works: Local-First Encryption</h2>
+                <p>jBudget runs on your computer (Windows, with Android in progress) and stores everything locally. No cloud sync. No servers holding your data. Your entire budget—accounts, income, bills, debts, payment history—lives encrypted on your hard drive.</p>
+                <p>Here's how it works:</p>
+                <ul>
+                    <li><strong>Encryption at rest:</strong> Your database is encrypted using AES-256, the same standard used by governments and financial institutions</li>
+                    <li><strong>Your key, your choice:</strong> The encryption key is generated on your machine and stored in Windows Credential Manager (or Android Keystore on Android). You control it.</li>
+                    <li><strong>No internet requirement:</strong> jBudget works completely offline. It never needs to connect to the internet to function.</li>
+                    <li><strong>Backups are encrypted too:</strong> If you export a backup file, it's encrypted with a passphrase you create. That file is useless without your passphrase.</li>
+                </ul>
+
+                <h2>What This Means for Your Privacy</h2>
+                <p>With jBudget's encryption approach:</p>
+                <ul>
+                    <li><strong>Only you can read your data.</strong> Even if someone gained physical access to your hard drive, the encrypted database cannot be opened without your encryption key.</li>
+                    <li><strong>There is no server to breach.</strong> Your financial data isn't stored in a company's data center. It's on your machine.</li>
+                    <li><strong>No one is monetizing your budget.</strong> Your spending patterns, income, debt—none of it is mined for insights or analytics. It's yours alone.</li>
+                    <li><strong>You own the backups.</strong> When you export your data, you get an encrypted file you can store where you choose.</li>
+                </ul>
+
+                <h2>The Trade-Off You Make</h2>
+                <p>This privacy comes with a practical cost: you manage your own backups. jBudget doesn't automatically backup to the cloud. If your hard drive fails and you haven't made a manual backup, you lose your data.</p>
+                <p>For most people, this is the right trade: a few minutes of manual backup work, in exchange for complete privacy and control.</p>
+                <p>jBudget provides simple backup tools (one-click encrypted export, easy restore) and reminds you to back up regularly. But you're in control of whether and when that happens.</p>
+
+                <h2>Encryption 101: What You Need to Know</h2>
+                <p><strong>AES-256:</strong> Advanced Encryption Standard with a 256-bit key. Even with modern computers, this would take longer than the age of the universe to brute-force. It's the security standard for financial institutions, government agencies, and military communications.</p>
+                <p><strong>At rest vs. in transit:</strong> "At rest" means data sitting on your disk. "In transit" means data traveling across the internet. jBudget encrypts your data at rest (on your disk) and never transmits it, so there's no "in transit" exposure.</p>
+                <p><strong>Your key vs. a master key:</strong> Some apps encrypt your data but hold the master key themselves (they can decrypt everything if they choose). jBudget's encryption key is yours alone, stored on your machine, never transmitted or shared.</p>
+
+                <h2>What jBudget Can and Cannot Protect</h2>
+                <p><strong>jBudget protects:</strong></p>
+                <ul>
+                    <li>Your budget data at rest on your hard drive</li>
+                    <li>Backups you export and encrypt with a passphrase</li>
+                </ul>
+                <p><strong>jBudget does NOT protect:</strong></p>
+                <ul>
+                    <li>Your actual bank accounts (only your planning data about them)</li>
+                    <li>Physical access to an unlocked computer (jBudget doesn't require a password to open)</li>
+                    <li>Malware on your computer that might steal information while jBudget is running</li>
+                    <li>Your internet usage (if your ISP logs which sites you visit)</li>
+                </ul>
+                <p>jBudget protects your plan and your data. It does not protect against threats that exist outside the app.</p>
+
+                <h2>Why This Approach Exists</h2>
+                <p>jBudget was built by and for one person managing real family finances. The goal was straightforward: build a tool that couldn't lose your data, couldn't sell your data, and couldn't be compromised by someone else's security failure.</p>
+                <p>That's why it's local-first, encrypted, and offline by default. Your financial information is too important to trust to a third party.</p>
+
+                <div class="article-cta">
+                    <p>Own your budget data completely. Get end-to-end encrypted planning without cloud dependencies.</p>
+                    <a href="https://apps.microsoft.com/detail/9P0L066R3MTP?hl=en-us&gl=US&ocid=pdpshare" class="btn">Download jBudget</a>
+                </div>
+                <div class="related-guides">
+                    <h2>Related Guides</h2>
+                    <div class="related-grid">
+                        <div class="resource-card">
+                            <h3><a href="jbudget-vs-ynab.html">jBudget vs. YNAB</a></h3>
+                            <p>Comparing the one-time purchase alternative to the subscription budget app.</p>
+                        </div>
+                        <div class="resource-card">
+                            <h3><a href="budget-apps-compared.html">Budget Apps Compared</a></h3>
+                            <p>YNAB, EveryDollar, Goodbudget, Quicken, and jBudget—which one answers your actual question.</p>
+                        </div>
+                    </div>
+                </div>
+            </article></div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../../../support.html">Support</a> &middot; <a href="../../../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

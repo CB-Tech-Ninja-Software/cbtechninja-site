@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Undebt.it vs. jBudget: Why Free Isn&#x27;t Always Better | CB Tech Ninja Software</title>
+<meta name="description" content="Comparing Undebt.it (free calculator) to jBudget (full simulator). What Undebt.it does well and what it misses.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="theme-jbudget">
+<header class="site"><div class="wrap">
+<a class="brand" href="../../../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
+</div></header>
+<main><div class="wrap"><div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../jbudget.html">jBudget</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">Undebt.it vs. jBudget</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Undebt.it vs. jBudget: Why Free Isn't Always Better</h1><p class="lead">Undebt.it is free and does one thing well. Here's what it does well—and what it doesn't answer.</p></div>
+<article class="prose article" style="padding-top:24px">
+                
+                <h2>What Undebt.it Does (And Does It Well)</h2>
+                <p>Undebt.it is a free, web-based payoff calculator. You give it your debts and their interest rates, and it shows you which method (avalanche, snowball, custom) saves the most interest. That's exactly what it's built for, and it does it cleanly:</p>
+                <ul>
+                    <li>No account required—just visit the site and calculate</li>
+                    <li>Web-based, so you can access it from any device</li>
+                    <li>Free, forever</li>
+                    <li>Simple interface with no clutter</li>
+                    <li>Shows you how much interest each method saves</li>
+                </ul>
+                <p>If all you need is "avalanche or snowball, which is better," Undebt.it answers that question without friction.</p>
+
+                <h2>Where It Breaks Down</h2>
+                <p>Say you use Undebt.it to plan a payoff strategy. It tells you: "Snowball will be faster; avalanche saves $X in interest."</p>
+                <p>Sounds good. You pick snowball and commit to sending an extra $200 a month toward the smallest debt.</p>
+                <p>Two months in, reality hits.</p>
+                <p>March arrives, and a quarterly property tax bill ($500) and car insurance ($600) land in the same week. The paycheck doesn't arrive until the 20th. The account has $80 in it.</p>
+                <p>There's no way to send the full $200 extra that month—barely enough to cover minimum payments.</p>
+                <p>The plan Undebt.it said would work doesn't work. Not because of a miscalculation—because Undebt.it never asked about the actual account balance, actual income dates, or actual bill due dates. It just did math on averages.</p>
+
+                <h2>The Question Undebt.it Doesn't Answer</h2>
+                <p><strong>"Can I actually afford this plan given my real cash flow?"</strong></p>
+                <p>Undebt.it shows you a payoff timeline and tells you how much interest each strategy saves. But it can't answer these questions:</p>
+                <ul>
+                    <li>On March 15th, when my property tax is due, will I have enough in the bank?</li>
+                    <li>What if my car repair comes up in June, on top of everything else?</li>
+                    <li>In months where I have 3 paychecks instead of 2, can I send more extra?</li>
+                    <li>If I follow this plan, will my account ever drop below a safety buffer?</li>
+                </ul>
+                <p>These aren't hypothetical questions. They're the reason most people's payoff plans fail in real life.</p>
+
+                <h2>How jBudget Approaches It Differently</h2>
+                <p>Instead of a calculator, jBudget is a simulator. You give it:</p>
+                <ul>
+                    <li>Your actual accounts and balances</li>
+                    <li>When your paychecks actually land (weekly, biweekly, etc.)</li>
+                    <li>When your bills are actually due (monthly, quarterly, annual, on specific dates)</li>
+                    <li>Your actual debt minimums and interest rates</li>
+                </ul>
+                <p>Then jBudget runs your financial life forward month by month, day by day. It shows you month-by-month account balances. And critically, it tells you if a plan would ever leave an account in the red.</p>
+
+                <h2>A Concrete Example: When Calculators Fail</h2>
+                <p>Let's say you have:</p>
+                <ul>
+                    <li>$5,000 credit card debt at 18% APR</li>
+                    <li>$8,000 personal loan at 5% APR</li>
+                    <li>Income: $4,000/month, biweekly paychecks</li>
+                    <li>Bills: Rent $1,200 (1st), Utilities $150 (15th), Car insurance $600 (twice yearly)</li>
+                    <li>Extra available: $200/month</li>
+                </ul>
+
+                <h3>What Undebt.it Says</h3>
+                <p>"Snowball will pay off the personal loan in X months. Avalanche will save $Y in interest."</p>
+                <p>You pick snowball and commit to the plan.</p>
+
+                <h3>What jBudget Shows</h3>
+                <p>jBudget runs the same scenario and tells you:</p>
+                <p>"Your snowball plan works most months. But in March and September, when insurance is due, your account drops to -$80 in the third week. To make snowball work, you either need to:</p>
+                <ul>
+                    <li>Reduce the extra payment to $150 in March and September, or</li>
+                    <li>Fund those two months from savings, or</li>
+                    <li>Switch to avalanche, which actually works without adjustment."</li>
+                </ul>
+
+                <p>Now you're choosing based on what's actually possible, not what a calculator thinks you can do.</p>
+
+                <figure class="article-screenshot">
+                    <img src="../../../images/jbudget-plan-shortfall.png" width="1600" height="1000" alt="jBudget showing a red shortfall warning when cash flow runs negative" loading="lazy">
+                    <figcaption>jBudget catches the months where a plan doesn't work—Undebt.it can't.</figcaption>
+                </figure>
+
+                <h2>The Honest Comparison</h2>
+                <div class="compare-table-wrap">
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Undebt.it</th>
+                                <th>jBudget</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Price</td>
+                                <td>Free</td>
+                                <td>One-time purchase</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Calculator (web-based)</td>
+                                <td>Simulator (desktop app)</td>
+                            </tr>
+                            <tr>
+                                <td>Payoff strategy comparison</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Cash flow safety check</td>
+                                <td><span class="compare-no">&#10007;</span> No</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Day-by-day account balance view</td>
+                                <td><span class="compare-no">&#10007;</span> No</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Requires entering all bills/income</td>
+                                <td><span class="compare-no">&#10007;</span> No (just debts)</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes (accounts, income, bills, debts)</td>
+                            </tr>
+                            <tr>
+                                <td>Warns about promotional APR expiry</td>
+                                <td><span class="compare-no">&#10007;</span> No</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes</td>
+                            </tr>
+                            <tr class="compare-highlight">
+                                <td>Offline / Private</td>
+                                <td>Depends on your privacy trust</td>
+                                <td><span class="compare-yes">&#10003;</span> Yes (local, encrypted)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>When Should You Use Each?</h2>
+
+                <h3>Use Undebt.it if:</h3>
+                <ul>
+                    <li>You just want to compare avalanche vs. snowball interest savings on a single payoff cycle</li>
+                    <li>You're not concerned about cash flow timing</li>
+                    <li>You want the fastest, lightest tool with zero friction</li>
+                </ul>
+
+                <h3>Use jBudget if:</h3>
+                <ul>
+                    <li>You want to know whether a plan actually works given your real bills and paychecks</li>
+                    <li>You have irregular income (biweekly paycheck, gig work, bonuses)</li>
+                    <li>You have multiple bills landing in the same week</li>
+                    <li>You want to compare strategies month by month and see account balances</li>
+                    <li>You want to track your plan as you execute it (confirming payments, catching shortfalls)</li>
+                </ul>
+
+                <h2>The Bottom Line</h2>
+                <p>Undebt.it is a fast, free answer to "which strategy saves more interest." For that specific question, it works.</p>
+                <p>But Undebt.it assumes perfect circumstances. It assumes you'll have money on the date it's due. It assumes your bills land evenly throughout the month. It assumes nothing unexpected happens.</p>
+                <p>Real life is messier. And if your plan falls apart in month 4 when the unexpected lands, then "free" wasn't actually cheaper—it cost you months of failed planning and stress.</p>
+                <p>jBudget costs something. But it answers the question that matters: <strong>"Will this plan actually work for me?"</strong></p>
+
+                <div class="article-cta">
+                    <p>Test your plan against your real cash flow. See which strategy actually works for you.</p>
+                    <a href="https://apps.microsoft.com/detail/9P0L066R3MTP?hl=en-us&gl=US&ocid=pdpshare" class="btn">Download jBudget</a>
+                </div>
+                <div class="related-guides">
+                    <h2>Related Guides</h2>
+                    <div class="related-grid">
+                        <div class="resource-card">
+                            <h3><a href="budget-apps-compared.html">Budget Apps Compared</a></h3>
+                            <p>YNAB, EveryDollar, Goodbudget, Quicken, and jBudget—which one answers your actual question.</p>
+                        </div>
+                        <div class="resource-card">
+                            <h3><a href="cash-flow-check.html">The Cash-Flow Check</a></h3>
+                            <p>Why your payoff plan might not actually work—and how jBudget catches that problem before you hit it.</p>
+                        </div>
+                    </div>
+                </div>
+            </article></div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../../../support.html">Support</a> &middot; <a href="../../../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

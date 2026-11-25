@@ -121,3 +121,20 @@ body[class*="theme-"] h2{border-left:3px solid var(--accent);padding-left:12px}
   nav a{margin-left:12px}
   .shots img.phone{max-width:260px}
 }
+/* jBudget how-it-works + articles */
+.prose ol{padding-left:1.3em;margin:0 0 1em}.prose ol li,.prose ul li{margin-bottom:.4em}
+.prose .feature{margin-bottom:2.2em}.prose .feature img{margin:18px 0;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.shots img.phone{max-width:260px}
+.breadcrumb{font-size:.9rem;color:var(--ink-soft);margin-bottom:14px}.breadcrumb a{color:var(--ink-soft)}
+.article h3{margin-top:1.4em}.article figure{margin:22px 0}.article figure img{border:1px solid var(--line);border-radius:var(--radius)}
+.article figcaption{color:var(--ink-soft);font-size:.9rem;margin-top:8px}
+.article-cta,.compare-highlight-box{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--radius);padding:18px 22px;margin:28px 0}
+.article-cta p{margin:0 0 12px;font-weight:600}.article-cta .btn{margin:0}
+.related-guides{margin-top:36px}.related-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.resource-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}.resource-card h3{margin:0 0 6px;font-size:1.05rem}.resource-card p{margin:0;color:var(--ink-soft);font-size:.95rem}
+.compare-table-wrap{overflow-x:auto;margin:18px 0}.compare-table{border-collapse:collapse;width:100%;font-size:.93rem}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:9px 12px;text-align:left}.compare-table th{background:var(--surface)}
+tr.compare-highlight td{background:var(--accent-soft);font-weight:600}
+.compare-yes{color:#16a34a;font-weight:800}.compare-no{color:#dc2626;font-weight:800}.compare-warn{color:#d97706;font-weight:800}
+.pro-list,.con-list{padding-left:1.2em}.decision-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.decision-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px}.decision-card.decision-jbudget{border-color:var(--accent)}
