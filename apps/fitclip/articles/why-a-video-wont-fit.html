@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Why a video won't fit a size limit (and what the numbers look like) | CB Tech Ninja Software</title>
-<meta name="description" content="Why a video won&#x27;t fit a size limit: bitrate times duration, worked examples at 10 MB, and what FitClip does when a clip is too long.">
+<meta name="description" content="Why a video won&#x27;t fit a size limit: bitrate times duration, worked examples at 10 MB, and what FitSize Video does when a clip is too long.">
 <meta property="og:title" content="Why a video won&#x27;t fit a size limit (and what the numbers look like) | CB Tech Ninja Software">
-<meta property="og:description" content="Why a video won&#x27;t fit a size limit: bitrate times duration, worked examples at 10 MB, and what FitClip does when a clip is too long.">
+<meta property="og:description" content="Why a video won&#x27;t fit a size limit: bitrate times duration, worked examples at 10 MB, and what FitSize Video does when a clip is too long.">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="CB Tech Ninja Software">
 <meta name="twitter:card" content="summary">
@@ -19,12 +19,12 @@
 <nav><a href="../../../index.html#apps">Apps</a><a href="../../../index.html#hire">Hire us</a><a href="../../../support.html">Support</a><a href="../../../privacy.html">Privacy</a></nav>
 </div></header>
 <main><div class="wrap">
-<div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../fitclip.html">FitClip</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">Why a video won't fit a size limit (and what the numbers look like)</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Why a video won't fit a size limit (and what the numbers look like)</h1><p class="lead">File size is bitrate times duration. Once you see the arithmetic, it is clear why a short clip fits easily and a long one can't.</p></div>
+<div class="page-head"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../fitclip.html">FitSize Video</a> <span aria-hidden="true">/</span> <a href="index.html">Guides</a> <span aria-hidden="true">/</span> <span aria-current="page">Why a video won't fit a size limit (and what the numbers look like)</span></nav><h1 style="font-size:clamp(1.8rem,5vw,2.6rem)">Why a video won't fit a size limit (and what the numbers look like)</h1><p class="lead">File size is bitrate times duration. Once you see the arithmetic, it is clear why a short clip fits easily and a long one can't.</p></div>
 <article class="prose article" style="padding-top:24px">
 <h2>The one equation</h2>
 <p>A video file's size is roughly its total bitrate multiplied by its length. To fit a limit, the bitrate has to come down as the clip gets longer. Quality depends on how many bits you can spend per second.</p>
 <h2>An example at 10 MB</h2>
-<p>FitClip reserves a share of the limit for the container and rate-control overshoot, and sets aside 96 kbps for audio. Using a 7% reserve, here is the rough arithmetic for a 10 MB limit (10,000,000 bytes &times; 0.93 &times; 8 bits &divide; seconds, minus 96 kbps for audio). These are illustrations of the maths, not a promise of what the app will produce for your clip.</p>
+<p>FitSize Video reserves a share of the limit for the container and rate-control overshoot, and sets aside 96 kbps for audio. Using a 7% reserve, here is the rough arithmetic for a 10 MB limit (10,000,000 bytes &times; 0.93 &times; 8 bits &divide; seconds, minus 96 kbps for audio). These are illustrations of the maths, not a promise of what the app will produce for your clip.</p>
 <table style="width:100%;border-collapse:collapse"><thead><tr><th align="left">Clip length</th><th align="left">Total budget</th><th align="left">Left for video</th></tr></thead><tbody>
 <tr><td>30 seconds</td><td>about 2.48 Mbps</td><td>about 2.38 Mbps</td></tr>
 <tr><td>1 minute</td><td>about 1.24 Mbps</td><td>about 1.14 Mbps</td></tr>
@@ -32,12 +32,12 @@
 <tr><td>5 minutes</td><td>about 0.25 Mbps</td><td>about 0.15 Mbps</td></tr>
 </tbody></table>
 <p>Each doubling of length halves what is left for the picture. By five minutes the video has only about 150 kbps to work with.</p>
-<h2>Where FitClip says no</h2>
-<p>If the video budget falls below about 150 kbps, FitClip reports &ldquo;too long for this size&rdquo; rather than delivering a blurry result. That is a deliberate choice: an honest message is more useful than a file that technically fits but can't be watched.</p>
+<h2>Where FitSize Video says no</h2>
+<p>If the video budget falls below about 150 kbps, FitSize Video reports &ldquo;too long for this size&rdquo; rather than delivering a blurry result. That is a deliberate choice: an honest message is more useful than a file that technically fits but can't be watched.</p>
 <h2>What you can do</h2>
-<ul><li><strong>Choose a larger limit,</strong> if the destination allows it.</li><li><strong>Use a shorter clip.</strong> FitClip doesn't trim, so cut the clip in another tool first.</li><li><strong>Share a link</strong> instead of the file, if the service allows it.</li></ul>
-<p>FitClip also picks the output resolution so there are enough bits per pixel to hold the picture together: a lower resolution at a tight limit looks better than full resolution with heavy blocking.</p>
-<div class="actions"><a class="btn ghost" href="index.html">&larr; All FitClip guides</a><a class="btn ghost" href="../../fitclip.html">FitClip</a></div>
+<ul><li><strong>Choose a larger limit,</strong> if the destination allows it.</li><li><strong>Use a shorter clip.</strong> FitSize Video doesn't trim, so cut the clip in another tool first.</li><li><strong>Share a link</strong> instead of the file, if the service allows it.</li></ul>
+<p>FitSize Video also picks the output resolution so there are enough bits per pixel to hold the picture together: a lower resolution at a tight limit looks better than full resolution with heavy blocking.</p>
+<div class="actions"><a class="btn ghost" href="index.html">&larr; All FitSize Video guides</a><a class="btn ghost" href="../../fitclip.html">FitSize Video</a></div>
 </article>
 </div></main>
 <footer><div class="wrap">
