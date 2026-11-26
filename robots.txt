@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cb-tech-ninja-software.github.io/cbtechninja-site/sitemap.xml
