@@ -145,3 +145,13 @@ details.faq{border:1px solid var(--line);border-radius:var(--radius);background:
 details.faq summary{cursor:pointer;font-weight:700}
 details.faq p{margin:.6em 0 0}
 .prose table th,.prose table td{padding:8px 10px;border-bottom:1px solid var(--line)}
+/* Official store badges: artwork unaltered, sized by height only */
+.stores{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:24px 0 0}
+.stores a,.stores .soon{display:inline-block;line-height:0;border-radius:8px}
+.stores img{display:block;height:44px;width:auto;max-width:100%}
+.stores img.gp{height:62px;margin:-9px -6px}
+.stores .soon{opacity:.45;filter:grayscale(1);cursor:default}
+.stores-note{font-size:.9rem;color:var(--ink-soft);margin:10px 0 16px;max-width:44rem}
+.card .stores{margin-top:14px}
+.card .stores img{height:38px}.card .stores img.gp{height:54px;margin:-8px -5px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stores a img[src*="apple"],:root:not([data-theme="light"]) .stores a img[src*="microsoft"]{outline:1px solid rgba(255,255,255,.18);outline-offset:-1px;border-radius:7px}}
