@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Division Assistant: analytics dashboard for a homebuilding division | CB Tech Ninja Software</title>
+<meta name="description" content="Case study: a private, encrypted analytics desktop app for a homebuilding division. P&L, lot inventory, backlog, land pipeline and public housing data. No client data shown.">
+<meta property="og:title" content="Division Assistant: analytics dashboard for a homebuilding division | CB Tech Ninja Software">
+<meta property="og:description" content="Case study: a private, encrypted analytics desktop app for a homebuilding division. P&L, lot inventory, backlog, land pipeline and public housing data. No client data shown.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta property="og:url" content="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/division-assistant.html">
+<link rel="canonical" href="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/division-assistant.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-division">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav aria-label="Main"><a href="../index.html#apps">Apps</a><a href="../index.html#tools">Tools</a><a href="../index.html#clients">Built for clients</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="breadcrumb"><a href="../index.html#tools">Portfolio</a> &rsaquo; Division Assistant</p>
+<div class="page-head"><span class="eyebrow">Built for a client &middot; private, not publicly available</span>
+<div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-division" style="width:72px;height:72px" aria-hidden="true"><svg style="width:36px;height:36px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h1 style="margin:0">Division Assistant</h1></div></div>
+<p class="lead">A private analytics desktop app that gives a homebuilding division leader one place for P&amp;L, lot inventory, backlog and land pipeline, alongside public housing-market data.</p></div>
+<section style="padding-top:24px" class="prose">
+<p class="privacy-note"><strong>Client work, described in general terms.</strong> The real application holds a company's confidential financial data, so this page names no client, shows no real figures and uses no screenshots of live data. The illustration below is invented.</p>
+<h2>What it does</h2>
+<div class="spec"><div class="card"><h3>Community and P&amp;L views</h3><p>Performance by community, with the metrics a division president actually reads.</p></div><div class="card"><h3>Lot and spec inventory</h3><p>Lot counts and spec-home construction stages in one view.</p></div><div class="card"><h3>Backlog and margins</h3><p>Sales backlog with margin analysis.</p></div><div class="card"><h3>Land deal pipeline</h3><p>Track land deals through their stages.</p></div><div class="card"><h3>Public housing-market data</h3><p>Pulls public macro series (FRED, Census building permits, Freddie Mac mortgage rates, BLS employment) over HTTPS.</p></div><div class="card"><h3>Report import with OCR</h3><p>Scanned PDFs and photos are read with OCR, split into report types, parsed into rows and reviewed before they are saved.</p></div></div>
+<figure class="figure-ill"><svg viewBox="0 0 640 220" role="img" aria-labelledby="ill-t ill-d"><title id="ill-t">Abstract dashboard illustration</title><desc id="ill-d">Three placeholder tiles and a bar chart with no real data.</desc>
+<rect x="0" y="0" width="640" height="220" rx="10" fill="var(--bg)"/>
+<rect x="16" y="16" width="190" height="56" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="30" y="30" width="60" height="8" rx="4" fill="var(--ink-soft)" opacity=".5"/><rect x="30" y="46" width="100" height="14" rx="4" fill="var(--accent)"/>
+<rect x="225" y="16" width="190" height="56" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="239" y="30" width="60" height="8" rx="4" fill="var(--ink-soft)" opacity=".5"/><rect x="239" y="46" width="80" height="14" rx="4" fill="var(--accent)"/>
+<rect x="434" y="16" width="190" height="56" rx="8" fill="var(--surface)" stroke="var(--line)"/><rect x="448" y="30" width="60" height="8" rx="4" fill="var(--ink-soft)" opacity=".5"/><rect x="448" y="46" width="120" height="14" rx="4" fill="var(--accent)"/>
+<rect x="16" y="88" width="608" height="116" rx="8" fill="var(--surface)" stroke="var(--line)"/>
+<g fill="var(--accent)"><rect x="50" y="150" width="36" height="40" rx="3"/><rect x="110" y="130" width="36" height="60" rx="3"/><rect x="170" y="140" width="36" height="50" rx="3"/><rect x="230" y="116" width="36" height="74" rx="3"/><rect x="290" y="126" width="36" height="64" rx="3"/><rect x="350" y="106" width="36" height="84" rx="3"/><rect x="410" y="120" width="36" height="70" rx="3"/><rect x="470" y="100" width="36" height="90" rx="3"/><rect x="530" y="112" width="36" height="78" rx="3"/></g></svg>
+<figcaption>Illustration only: placeholder shapes, not a screenshot and not real data.</figcaption></figure>
+<h2>How it is built</h2>
+<p>A single-user, local-first desktop app: Electron with a hardened renderer, React and TypeScript, and a SQLite database encrypted with SQLCipher so the data is protected at rest. Money is stored as integer cents throughout. The project ships with synthetic seed data and an automated test suite for development.</p>
+<h2>Want something like this?</h2>
+<p>We build apps, desktop tools and backends like this for clients. <a href="../support.html#contact">Get in touch</a> or <a href="https://www.upwork.com/freelancers/~01cec3d9e102959cce">hire Chris on Upwork</a>.</p>
+<div class="actions"><a class="btn ghost" href="../index.html#tools">&larr; All projects</a><a class="btn" href="../support.html#contact">Contact</a></div>
+</section></div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../guides/index.html">Guides</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

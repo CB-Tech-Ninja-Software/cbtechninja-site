@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SweepNinja (working name): workstation storage cleaner | CB Tech Ninja Software</title>
+<meta name="description" content="A Rust desktop storage cleaner for macOS and Windows: treemap, developer build-folder cleanup, duplicates and caches, with Trash-first deletes and undo. Working name.">
+<meta property="og:title" content="SweepNinja (working name): workstation storage cleaner | CB Tech Ninja Software">
+<meta property="og:description" content="A Rust desktop storage cleaner for macOS and Windows: treemap, developer build-folder cleanup, duplicates and caches, with Trash-first deletes and undo. Working name.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta property="og:url" content="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/cleandesk.html">
+<link rel="canonical" href="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/cleandesk.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-cleandesk">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav aria-label="Main"><a href="../index.html#apps">Apps</a><a href="../index.html#tools">Tools</a><a href="../index.html#clients">Built for clients</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="breadcrumb"><a href="../index.html#tools">Portfolio</a> &rsaquo; SweepNinja <span style="font-weight:500;font-size:.5em;color:var(--ink-soft)">working name</span></p>
+<div class="page-head"><span class="eyebrow">In development &middot; macOS &amp; Windows</span>
+<div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-cleandesk" style="width:72px;height:72px" aria-hidden="true"><svg style="width:36px;height:36px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="5" rx="1"/><rect x="13" y="10" width="8" height="11" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/></svg></div><h1 style="margin:0">SweepNinja <span style="font-weight:500;font-size:.5em;color:var(--ink-soft)">working name</span></h1></div></div>
+<p class="lead">A lean desktop utility that shows where your disk space went and lets you reclaim it safely: no bundled extras, nothing deleted without a preview and a way back.</p></div>
+<section style="padding-top:24px" class="prose">
+<p class="note"><strong>Status: in development.</strong> The final product name has not been chosen, and there is no public release yet.</p>
+<h2>The problem</h2>
+<p>Developer machines silently fill with build folders, caches and duplicate files, and most cleaners are either bloated or too willing to delete things you needed.</p>
+<h2>What it does</h2>
+<div class="spec"><div class="card"><h3>Treemap of disk use</h3><p>See at a glance which folders take the space.</p></div><div class="card"><h3>Developer artifacts</h3><p>Finds regenerable build output such as <code>node_modules</code>, <code>target</code>, <code>.dart_tool</code> and DerivedData and offers safe deletion.</p></div><div class="card"><h3>Duplicate finder</h3><p>Progressive hashing (size, then the start and end of each file, then a full BLAKE3 hash) with a hash cache so rescans are quick.</p></div><div class="card"><h3>Large and old files</h3><p>Surfaces big files that have not been touched in months.</p></div><div class="card"><h3>System and browser caches</h3><p>Clears package-manager, browser and temporary caches.</p></div><div class="card"><h3>Undo and audit log</h3><p>Deletes go to the Trash or Recycle Bin by default, every action is written to an audit log, and cleaned items can be restored.</p></div></div>
+<h2>Safety first</h2>
+<p>Every deletion passes a hard-coded never-touch list (system folders, credentials, active git checkouts, ML model caches), a dry-run summary, the Trash engine and the audit logger. One exception is stated plainly: if the Recycle Bin is turned off on a volume, or a file is too large for it, the file is removed permanently.</p>
+<h2>How it is built</h2>
+<p>A Rust workspace of small crates (scanner, dedup, trash, engine and app) targeting macOS 12+ and Windows 10+, with a tested core and a Windows installer script.</p>
+<h2>Want something like this?</h2>
+<p>We build apps, desktop tools and backends like this for clients. <a href="../support.html#contact">Get in touch</a> or <a href="https://www.upwork.com/freelancers/~01cec3d9e102959cce">hire Chris on Upwork</a>.</p>
+<div class="actions"><a class="btn ghost" href="../index.html#tools">&larr; All projects</a><a class="btn" href="../support.html#contact">Contact</a></div>
+</section></div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../guides/index.html">Guides</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>

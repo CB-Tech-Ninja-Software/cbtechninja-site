@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SyncNinja: keep a portable SSD in sync | CB Tech Ninja Software</title>
+<meta name="description" content="SyncNinja is a desktop app that keeps folders on a portable SSD in sync with the machines it plugs into: merge or mirror, safe deletes, optional encryption.">
+<meta property="og:title" content="SyncNinja: keep a portable SSD in sync | CB Tech Ninja Software">
+<meta property="og:description" content="SyncNinja is a desktop app that keeps folders on a portable SSD in sync with the machines it plugs into: merge or mirror, safe deletes, optional encryption.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CB Tech Ninja Software">
+<meta property="og:url" content="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/syncninja.html">
+<link rel="canonical" href="https://cb-tech-ninja-software.github.io/cbtechninja-site/projects/syncninja.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body class="theme-syncninja">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="brand" href="../index.html">CB Tech <span>Ninja</span> Software</a>
+<nav aria-label="Main"><a href="../index.html#apps">Apps</a><a href="../index.html#tools">Tools</a><a href="../index.html#clients">Built for clients</a><a href="../index.html#hire">Hire us</a><a href="../support.html">Support</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="breadcrumb"><a href="../index.html#tools">Portfolio</a> &rsaquo; SyncNinja</p>
+<div class="page-head"><span class="eyebrow">In development &middot; Windows &amp; macOS</span>
+<div class="card" style="border:0;background:none;padding:0"><div class="top" style="gap:18px"><div class="glyph t-syncninja" style="width:72px;height:72px" aria-hidden="true"><svg style="width:36px;height:36px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7H8a4 4 0 0 0-4 4"/><path d="m16 3 4 4-4 4"/><path d="M4 17h12a4 4 0 0 0 4-4"/><path d="m8 21-4-4 4-4"/></svg></div><h1 style="margin:0">SyncNinja</h1></div></div>
+<p class="lead">SyncNinja keeps folders on a portable SSD in sync with whichever machine it is plugged into. Plug in the drive and it starts; pull it out and your files are safely on both sides.</p></div>
+<section style="padding-top:24px" class="prose">
+<p class="note"><strong>Status: in development.</strong> SyncNinja is not released and has no store listing. This page describes what the code does today.</p>
+<h2>The problem</h2>
+<p>Working on two or three computers with one portable drive usually means dragging folders by hand, overwriting the wrong copy, and discovering a deleted file a week later.</p>
+<h2>What it does</h2>
+<div class="spec"><div class="card"><h3>Two sync modes, per folder pair</h3><p><em>Merge</em> is two-way sync built on rclone bisync. <em>Mirror</em> is one-way, with the source machine as the authority.</p></div><div class="card"><h3>Safe deletes</h3><p>Mirror mode moves deleted files into a trash folder on the drive and prunes it after 30 days. Deletes are previewed first and bulk deletes need confirmation.</p></div><div class="card"><h3>Conflict scanning</h3><p>Conflicting copies are detected and reported instead of silently overwritten.</p></div><div class="card"><h3>Optional encryption</h3><p>A drive can use rclone crypt. The password is supplied at run time and never written to the config file.</p></div><div class="card"><h3>Plug-in detection</h3><p>Drives are recognised by a marker file. On macOS a LaunchAgent starts the app when a volume mounts; on Windows it uses a scheduled task.</p></div><div class="card"><h3>Tray and background mode</h3><p>A tray icon shows live progress and speed, and sends a notification when a sync completes.</p></div><div class="card"><h3>Git-aware</h3><p><code>.git</code> folders are always excluded unless a pair explicitly opts in to including repositories.</p></div></div>
+<h2>How it is built</h2>
+<p>An Electron desktop app for Windows (64-bit) and macOS 13 or newer, with a Node.js command-line engine underneath and rclone doing the transfers. The vault password can be saved in the operating system's credential store.</p>
+<h2>Want something like this?</h2>
+<p>We build apps, desktop tools and backends like this for clients. <a href="../support.html#contact">Get in touch</a> or <a href="https://www.upwork.com/freelancers/~01cec3d9e102959cce">hire Chris on Upwork</a>.</p>
+<div class="actions"><a class="btn ghost" href="../index.html#tools">&larr; All projects</a><a class="btn" href="../support.html#contact">Contact</a></div>
+</section></div></main>
+<footer><div class="wrap">
+<span>&copy; 2026 Christopher Beulah, CB Tech Ninja Software</span>
+<span><a href="../guides/index.html">Guides</a> &middot; <a href="../support.html">Support</a> &middot; <a href="../privacy.html">Privacy</a></span>
+</div></footer>
+</body>
+</html>
